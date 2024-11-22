@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans</title>
+    <style>
+              * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50.50%;
+  padding: 0px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            display: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        p {
+  font-size: 25px;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hot Beans</h1>
+    <nav>
+        <ul>
+            <li><a href="#home.html" onclick="showSection('home')">about us</a></li>
+            <li><a href="#staff.html" onclick="showSection('staff')">Staff</a></li>
+            <li><a href="#web development courses.html" onclick="showSection('events')">Web development courses</a></li>
+            <li><a href="#jobs.html" onclick="showSection('jobs')">Job requirements</a></li>
+            <li><a href="#application.html" onclick="showSection('application')">Application Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" style="display: block;">
+    <h2>Welcome to Hot Beans</h2>
+    <p></p>
+    <div class="row">
+        <div class="column">
+          <img src="C:\Users\242952\OneDrive - wqeic.ac.uk\IT\unit 6\MHR\office of hot beans.jpg" alt="room with computers" width="500 height="450">>
+        </div>
+          <img src="C:\Users\242952\OneDrive - wqeic.ac.uk\IT\unit 6\MHR\hot bean staff image.jpg" alt="people standing" width="500 height="450">>
+        </div>
+
+
+        <p> 
+           we're a dedicated team of IT professionals committed to helping businesses of all sizes thrive in the digital age. Drawing on its over 20+ year experience with the delivery of innovative IT solutions, we offer services that can be relied on by our clients to upgrade their technology infrastructure, make improvements in performance, and spur growth.
+        
+</section>
+
+
+
+  <section id="staff">
+    <h2>Our Staff</h2>
+    <p>Meet our dedicated team of professionals who ensure the highest standards in everything we do.</p>
+    <div class="row">
+        <div class="column">
+            <div class="image-text">
+                <img src="C:\Users\242952\OneDrive - wqeic.ac.uk\IT\unit 6\MHR\trainne staff.jpg" alt="people listening" width="500" height="450">
+            </div>
+            <p>We have many trainees who have undergone years of training to work for us. Our staff is dedicated and well-trained to meet the highest standards in their field.</p>
+        </div>
+        <div class="column">
+            <div class="image-text">
+                <img src="C:\Users\242952\OneDrive - wqeic.ac.uk\IT\unit 6\MHR\trainne staff of hot beans.jpg" alt="people around a table" width="500" height="450">
+            </div>
+            <p>We offer courses that help individuals become more professional in specific areas of IT. With our training programs, they gain the skills necessary to excel in their careers and work with us on real-world projects.</p>
+        </div>
+        <div class="column">
+            <div class="image-text">
+                <img src="C:\Users\242952\OneDrive - wqeic.ac.uk\IT\unit 6\MHR\hot bean trainne staff.jpg" alt="people standing and listening" width="500" height="450">
+            </div>
+            <p>We prioritize our customers’ time and satisfaction, ensuring that our staff always goes above and beyond to deliver high-quality work. Our training ensures that our employees produce work to the highest effort and quality, which helps us maintain long-term relationships with our clients.</p>
+        </div>
+    </div>
+    <div class="extra-text">
+        <p>With our courses, we make sure our employees are equipped with the skills they need, so our customers never have to look elsewhere for the training they require. And if they complete our courses, they are more likely to return and work for us, strengthening our team and allowing us to take on more work. This leads to even better results for our clients and helps us continue to grow as a company.</p>
+    </div>
+</section>
+
+<section id="events">
+  <h2>Web Development Courses Available</h2>
+  <p>Join us to explore a wide range of web development courses designed to enhance your skills and boost your career. Whether you're a beginner or an experienced developer, we have something for everyone!</p>
+
+  <div class="course-list">
+      <!-- Udacity Full Stack Web Developer -->
+      <div class="course-item">
+          <h3>Udacity: Full Stack Web Developer</h3>
+          <p><strong>Overview:</strong> Project-based training for web developers. This course will teach you to build and deploy full-stack, database-backed APIs and web applications. Topics covered include identity access management, server deployment, containerization, data modeling, and API development.</p>
+          <p>This program uses 4 sub-courses, each with its own project (like a venue booking database or a trivia API). The capstone project involves building a full-stack web application that combines all of your new skills. Ideal for developers with background skills in Python, HTML, CSS, and Git.</p>
+      </div>
+
+      <!-- Coursera Introduction to Web Development -->
+      <div class="course-item">
+          <h3>Coursera: Introduction to Web Development</h3>
+          <p><strong>Overview:</strong> This course is great for beginners. It covers the basics of web development in 6 modules, including video lectures, quizzes, and hands-on practice.</p>
+          <p>You will learn how to structure and host a website, and gain foundational skills in HTML, CSS, and JavaScript. The course culminates in building a simple web application, with an introduction to form validation and JavaScript testing.</p>
+      </div>
+
+      <!-- TripleTen Software Engineering Bootcamp -->
+      <div class="course-item">
+          <h3>TripleTen: Software Engineering Bootcamp</h3>
+          <p><strong>Overview:</strong> A 10-month, part-time bootcamp that covers both front-end and back-end development, including JavaScript, React, Node.js, and more.</p>
+          <p>The course features project-driven learning, with real-world scenarios that culminate in a final project. There’s also a robust career preparation module, including career mentoring, externships, and post-graduation job support. With a money-back guarantee if you don't land a job within six months, TripleTen offers an excellent pathway into tech.</p>
+          <p>Graduates have gone on to work at major tech companies like Tesla, Google, and Spotify.</p>
+      </div>
+
+      <!-- Coursera HTML, CSS, and JavaScript for Web Developers -->
+      <div class="course-item">
+          <h3>Coursera: HTML, CSS, and JavaScript for Web Developers</h3>
+          <p><strong>Overview:</strong> This course covers the fundamentals of web development, including HTML, CSS, and JavaScript. It also teaches how to handle AJAX requests, process JSON data, and use the Bootstrap framework.</p>
+          <p>The course concludes with a capstone project where you’ll build a dynamic restaurant website. This is a great introductory course for those looking to gain foundational web development skills.</p>
+      </div>
+
+      <!-- Scrimba Frontend Developer Career Path -->
+      <div class="course-item">
+          <h3>Scrimba: Frontend Developer Career Path</h3>
+          <p><strong>Overview:</strong> Focused on front-end development, this course covers HTML, CSS, JavaScript, React, async JavaScript, and more. It also includes UI design and working with APIs.</p>
+          <p>You will engage in code review sessions to improve your coding practices and receive feedback from industry professionals. Upon completion, you’ll earn a Scrimba Frontend Developer Certificate. There is also a scholarship option available for those who need financial assistance.</p>
+      </div>
+
+      <!-- Codecademy Web Development Skills Path -->
+      <div class="course-item">
+          <h3>Codecademy: Web Development Skills Path</h3>
+          <p><strong>Overview:</strong> In this course, you'll learn how to build websites using HTML, style them with CSS, and make them interactive with JavaScript. You’ll also dive into React for front-end development and Node.js with Express for back-end applications.</p>
+          <p>Additional topics include version control with Git, SQL basics, and test-driven development (TDD). By the end, you'll have built portfolio-worthy projects like a Yelp API search app and a website for a local coffee shop.</p>
+      </div>
+  </div>
+</section>
+
+<style>
+  /* Basic styling for the course section */
+  #events {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+  }
+
+  #events h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+  }
+
+  #events p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 30px;
+  }
+
+  .course-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .course-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .course-item h3 {
+      font-size: 1.5rem;
+      color: #4CAF50;
+      margin-bottom: 10px;
+  }
+
+  .course-item p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+  }
+
+  .course-item p strong {
+      font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+      .course-list {
+          grid-template-columns: 1fr;
+      }
+  }
+</style>
+
+<section id="jobs">
+    <h2>Job requirements to work for us</h2>
+    <p>Check out our requirements and see if you are eligible to work for us</p>
+    <h1>requirements for different jobs that are Available</h1>
+
+    <article>
+      <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software Developer Profile</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 20px;
+background-color: #f4f4f4;
+color: #333;
+}
+h1, h2 {
+color: #2c3e50;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+padding: 8px 0;
+}
+.section {
+background-color: #ffffff;
+border-radius: 8px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.competencies, .soft-competencies, .education-experience {
+margin-bottom: 15px;
+}
+.competencies ul, .soft-competencies ul, .education-experience ul {
+padding-left: 20px;
+}
+</style>
+
+<h1>Software Developer Profile</h1>
+<div class="section competencies">
+<h2>Competencies</h2>
+<ul>
+<li><strong>Languages:</strong> Proficient - Java, Python, C#, Javascript, Ruby, PHP.</li>
+<li><strong>Web Development Frameworks: </strong>Exposure to React, Angular, Django, Spring.</li>
+<li><strong>Database Management Systems:</strong> SQL, NoSQL, MongoDB, PostgreSQL.</li>
+<li><strong>Version Control:</strong> Git.</li>
+<li><strong>Cloud Platforms:</strong> AWS, Azure, Google Cloud.</li>
+<li><strong>Technologies:</strong> RESTful APIs, microservices, and architecture patterns.</li>
+<li><strong>Development Practices:** Unit testing, Continuous Integration (CI), and Deployment (CD).</li>
+</ul>
+</div>
+/**
+* Soft Competencies
+*/
+<div class="section soft-competencies">
+<h2>Soft Competencies</h2>
+<ul>
+<li><strong>Problem-solving:</strong> Strong analytical thinking skills.</li>
+<li><strong>Communication:</strong> Excellent verbal and written communication skills.</li>
+<li><strong>Teamwork:</strong> Collaborative and adaptable in team settings.</li>
+• Detail Oriented: Concise attention to detail to ensure high-quality results.
+</ul>
+</div>
+/**
+Education / Experience
+**/
+<div class="section education-experience">
+<h2>Education / Experience</h2>
+<ul>
+<li><strong>Education:</strong> Bachelor's degree in Computer Science, Information Technology, or related field. </li>
+<li><strong>Experience:</strong> 1-5 years of software development experience is different in role levels.
+<li><strong>Portfolio:</strong> A portfolio or examples of past projects is a plus.</li>
+</ul>
+</div>
+      
+    </article>
+    
+    <article>
+      <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Support Specialist / Help Desk Technician</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 20px;
+background-color: #f4f4f9;
+color: #333;
+}
+h1, h2 {
+color: #2c3e50;
+}
+.section {
+background-color: #fff;
+border-radius: 8px;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+border-bottom: 2px solid #2c3e50;
+padding-bottom: 8px;
+margin-bottom: 15px;
+font-size: 1.5em;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+padding: 8px 0;
+}
+.skills, .soft-skills, .education-experience {
+margin-bottom: 15px;
+}
+.skills ul, .soft-skills ul, .education-experience ul {
+padding-left: 20px;
+}
+.skills li, .soft-skills li, .education-experience li {
+font-size: 1.1em;
+}
+.highlight {
+font-weight: bold;
+}
+</style>
+
+
+<h1>IT Support Specialist / Help Desk Technician</h1>
+<.-- Technical Skills Section -->
+<div class="section skills">
+<h2>Technical Skills</h2>
+<ul>
+• TroubleshootingSkill-full: Experience in diagnosing and troubleshooting hardware and software issues.
+• Operating Systems: Experienced working in Windows, macOS, and Linux environments.
+<li><span class="highlight">Networking:</span> Knowledge of networking concepts such as IP addressing, VPN, DNS, and DHCP.</li>
+<li><span class="highlight">Remote Support Tools:</span> Proficient with ticketing systems and remote desktop support tools.</li>
+• <b>Cybersecurity Practices:</b> Basic understanding of firewalls, anti-virus software, and other security measures.
+</ul>
+</div>
+<div class="section soft-skills">
+<h2>Soft Skills</h2>
+<ul>
+• COMMUNICATION: Excellent verbal and written communication with end-users and colleagues alike. • CUSTOMER SERVICE: Provide excellent customer service in stressful, high-pressure situations.
+• PATIENCE & EMPATHY: The ability to understand and be empathetic when relating to the technical problems of end-users. • TIME MANAGEMENT: This involves prioritizing tasks and managing time in a fast-moving environment.
+<div class="section education-experience">
+<h2>Education / Experience</h2>
+<ul>
+<li><span class="highlight">Education:</span> Associate degree in Information Technology or a related field.
+<li><span class="highlight">Experience:</span> 1-2 years of experience in technical support or customer service roles.</li>
+<li><span class="highlight">Certifications:</span> CompTIA A+, ITIL, Microsoft Certified Solutions Associate will be an added advantage.</li>
+</ul>
+</div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity Analyst Job Description</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+    h1 {
+        color: #2a3d66;
+    }
+    h2 {
+        color: #3e5c8c;
+    }
+    ul {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+    li {
+        margin: 5px 0;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .highlight {
+        font-weight: bold;
+    }
+</style>
+
+
+
+<h1>Cybersecurity Analyst</h1>
+
+<div class="section">
+    <h2>Educational Requirements:</h2>
+    <ul>
+        <li><span class="highlight">Bachelor's degree</span> in Cybersecurity, Computer Science, or related field.</li>
+        <li>Industry certifications such as <span class="highlight">CompTIA Security+</span>, <span class="highlight">Certified Information Systems Security Professional (CISSP)</span>, <span class="highlight">Certified Ethical Hacker (CEH)</span>.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Skills & Experience:</h2>
+    <ul>
+        <li>Knowledge of security technologies (firewalls, IDS/IPS, VPNs).</li>
+        <li>Experience with vulnerability scanning, penetration testing, and threat analysis.</li>
+        <li>Familiarity with security compliance and frameworks (NIST, ISO 27001).</li>
+        <li>Strong understanding of networking and operating system security.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Soft Skills:</h2>
+    <ul>
+        <li>Strong analytical thinking and attention to detail.</li>
+        <li>Ability to stay calm under pressure and during security incidents.</li>
+    </ul>
+</div>
+      
+    </article>
+    
+    
+</section>
+
+<section id="application">
+    <h2>Application Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p> thanks for applying you will be sent a email on futher details about your Position you applied for and if your require any more assisatance dont hesistate  to contact us by emailing at HotBeans@gmail.com 
+</section>
+
+<footer>
+    <p>&copy; 2024 Hot Beans</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none'; // Hide all sections
+        });
+        document.getElementById(sectionId).style.display = 'block'; // Show the selected section
+    }
+</script>
+
+</body>
+</html>
